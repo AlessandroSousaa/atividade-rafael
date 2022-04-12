@@ -5,7 +5,7 @@ import styles from './style'; //importando o style
 
 
 
-    //calculo de imc
+
 
     export default function Form() {
       const [nota1, setNota1] = useState('');
