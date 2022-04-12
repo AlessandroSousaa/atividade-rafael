@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { Text, TextInput , View, TouchableOpacity } from 'react-native'
 
-import ResutImc from '../ResultMedia/index'//importando compónente
 import styles from './style'; //importando o style
 
 
