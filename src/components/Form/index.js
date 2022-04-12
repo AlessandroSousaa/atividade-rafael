@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import {Text, View, TextInput, TouchableOpacity, Keyboard,
+import {
+    Text,
+    View,
+    TextInput,
+    TouchableOpacity,
+    Keyboard,
 } from "react-native";
 
 import { styles } from './styles';
