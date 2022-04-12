@@ -10,7 +10,7 @@ export default function Title() {
       
       <View style={styles.boxTitle}>
 
-        <Text style={styles.textTitle}>Calcular Media</Text>
+        <Text style={styles.textTitle}>Calcular Média</Text>
 
       </View>
 

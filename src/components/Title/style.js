@@ -15,7 +15,7 @@ const styles = StyleSheet.create( {
   textTitle:{
 
       //cor do titulo e tamanho e tipo da fonte
-      color:'blue',
+      color:'#ff0043',
       fontSize:24,
       fontWeight:'bold',
       
