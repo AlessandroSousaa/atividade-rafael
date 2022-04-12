@@ -9,7 +9,7 @@ import {
 
 import { styles } from './styles';
 
-export function Home() {
+export function Form() {
     const [nota1, setNota1] = useState('');
     const [nota2, setNota2] = useState('');
     const [nota3, setNota3] = useState('');
