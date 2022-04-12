@@ -7,10 +7,10 @@ const styles = StyleSheet.create( {
 
     header:{
         
-        backgroundColor: 'orange',
+        
         alignItems:'center',
         justifyContent:'center',
-        height: "15%",
+        height: "60%",
         width: "100%",
 
       },
@@ -21,7 +21,16 @@ const styles = StyleSheet.create( {
         color:'white',
         width:"100%",
         textAlign:'center',
+        height:1,
+        padding:100,
       },
+
+    LinearGradient:{
+        height:150,
+        
+
+
+    }
   
   });
 
