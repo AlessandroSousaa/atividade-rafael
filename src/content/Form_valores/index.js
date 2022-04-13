@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Text, TextInput , View, TouchableOpacity } from 'react-native'
 
-import ResultValores from '../Result_Valores/index'//importando compónente
+import Result_Valores from '../Result_Valores/index'//importando compónente
 import styles from './style'; //importando o style
 
 export default function Form_Valores () {
