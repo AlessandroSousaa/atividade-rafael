@@ -4,7 +4,7 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create( {
 
-  resultImc:{  
+  resultImc:{  //informação do resultado
 
       flex: 1,
       marginTop: 15,
@@ -18,7 +18,7 @@ const styles = StyleSheet.create( {
 
   },
 
-  numberImc:{ 
+  numberImc:{ //resultado / cor e tamanho
       
       fontSize: 48,
       color: "#ff0043",
@@ -27,7 +27,7 @@ const styles = StyleSheet.create( {
 
   },
 
-  information:{ 
+  information:{ //informação do que e para fazer
 
       fontSize: 18,
       color: "#ff0043",

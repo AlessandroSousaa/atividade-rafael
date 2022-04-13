@@ -9,9 +9,9 @@ const styles = StyleSheet.create( {
 
       width: "100%",
       bottom: 0,
-      alignItems: "center",
-      borderTopLeftRadius: 30,
-      borderTopRightRadius: 30,
+      alignItems: "center",//centralizando
+      borderTopLeftRadius: 30,//bordas arredondadas
+      borderTopRightRadius: 30,//bordas arredondadas 
       marginTop: 30,
     
    },
@@ -25,7 +25,7 @@ const styles = StyleSheet.create( {
 
    },
 
-   formLabel:{
+   formLabel:{ //label de altura e peso
 
       color: "#000000",
       fontSize: 18,
@@ -58,7 +58,7 @@ const styles = StyleSheet.create( {
       
    },
 
-   textbuttonCalculator:{
+   textbuttonCalculator:{ //nome dentro do botão
 
       fontSize: 20,
       color: "#ffffff",
@@ -67,12 +67,18 @@ const styles = StyleSheet.create( {
 
    numberResult:{
       fontSize:20,
-      padding:10,
+      padding:20,
       height:40,
+      fontWeight:'bold',
+      paddingRight:30,
+      alignItems:'center',
+      paddingBottom:20,
+
    },
 
    information:{
-      fontSize:40
+      fontSize:40,
+      fontWeight:'bold',
    }
 
   });

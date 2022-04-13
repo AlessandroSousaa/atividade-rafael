@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import { Text, TextInput , View, TouchableOpacity } from 'react-native'
 
-import ResultMedia from '../Result_media/index'
-import styles from './style';
+import ResultMedia from '../Result_media/index'//importando compónente
+import styles from './style'; //importando o style
 
 export default function Form_media () {
 
@@ -31,8 +31,8 @@ export default function Form_media () {
                  style={styles.input}
                  onChangeText={setMedia1}
                  value={Media1}
-                 placeholder='Insira a primeira nota.'
-                 keyboardType='numeric'
+                 placeholder='Digite a primeira nota.'
+                 keyboardType='numeric'//determinado o tipo de teclado
                  
                  />
                  
@@ -42,8 +42,8 @@ export default function Form_media () {
                    style={styles.input}
                    onChangeText={setMedia2}
                    value={Media2}
-                   placeholder='Insira a segunda nota.'
-                   keyboardType='numeric'
+                   placeholder='Digite a segunda nota.'
+                   keyboardType='numeric'//determinado o tipo de teclado
 
                  />
 
@@ -52,53 +52,45 @@ export default function Form_media () {
                    style={styles.input}
                    onChangeText={setMedia3}
                    value={Media3}
-                   placeholder='Insira a terceira nota.'
-                   keyboardType='numeric'
+                   placeholder='Digite a terceira nota.'
+                   keyboardType='numeric'//determinado o tipo de teclado
 
                  />
-            <TouchableOpacity
-            style={styles.buttonCalculator}
-            activeOpacity={0.7}
-            onPress={gerarResultado}>
-            <Text style={styles.textbuttonCalculator}>Calcular</Text>
-           </TouchableOpacity>
+                  <TouchableOpacity
+                      style={styles.buttonCalculator}
+                        activeOpacity={0.7}
+                          onPress={gerarResultado}>
+                    <Text style={styles.textbuttonCalculator}>Calcular Média</Text>
+                  </TouchableOpacity>
  
-            </View>
+      </View>
 
             <View style={styles.cardResult}>
-				<Text style={styles.numberResult}>
-					Total:
-					{' '}
-					{total.toFixed(1)}
-				</Text>
-				<Text style={styles.numberResult}>
-					Média:
-					{' '}
-					{por.toFixed(1)}
-				</Text>
-			</View>
+				      <Text style={styles.numberResult}>
+				      	TOTAL:
+					        {' '}
+					        {total.toFixed(1)}
+				      </Text>
+				      <Text style={styles.numberResult}>
+					      MÉDIA:
+					        {' '}
+					        {por.toFixed(1)}
+				      </Text>
+			      </View>
 
-			{por < 5 && por > 0 && (
-				<Text style={styles.information}>Você foi reprovado</Text>
-			)}
+			          {por < 5 && por > 0 && (
+				          <Text style={styles.information}>REPROVADO :(</Text>
+)}
 
-			{por >= 5 && por < 7 && (
-				<Text style={styles.information}>Recuperação</Text>
-			)}
+			          {por >= 5 && por < 7 && (
+				          <Text style={styles.information}>RECUPERAÇÃO</Text>
+)}
 
-			{por >= 7 && (
-				<Text style={styles.information}>Você foi aprovado</Text>
-			)}
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-      </View>
+			          {por >= 7 && (
+				          <Text style={styles.information}>APROVADO!</Text>
+)}
+
+            </View>
 
     );
   }
