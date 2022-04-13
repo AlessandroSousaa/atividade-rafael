@@ -7,41 +7,41 @@ import Icon from 'react-native-vector-icons/Feather';
 import styles from '../Icones/style';
 
 
- function Airplay() {
+ function HomeScreen() {
   return (
     <View>
-        <Text>Airplay!</Text>
+        <Text>Home!</Text>
     </View>
   );
 }
 
-function Send() {
+function Search() {
     return(
         <View>
-          <Text>Send!</Text>
+          <Text>Search!</Text>
         </View>
       );
 }
 
-function Code() {
+function Chat() {
     return(
         <View>
         </View>
       );
 }
 
-function Users() {
+function Profile() {
     return(
         <View>
-          <Text>Users!</Text>
+          <Text>Profile!</Text>
         </View>
       );
 }
 
-function Bookmark() {
+function Settings() {
     return(
         <View>
-          <Text>Bookmark!</Text>
+          <Text>Settings!</Text>
         </View>
       );
 }
@@ -59,20 +59,20 @@ export default function App() {
 			let iconName;
 
 			switch (route.name) {
-				case 'Airplay':
-					iconName = 'airplay';
+				case 'Home':
+					iconName = 'home';
 					break;
-				case 'Send':
-					iconName = 'send';
+				case 'Search':
+					iconName = 'search';
 					break;
-				case 'Code':
-					iconName = 'code';
+				case 'Chat':
+					iconName = 'message-square';
 					break;
-				case 'Users':
-					iconName = 'users';
+				case 'Profile':
+					iconName = 'user';
 					break;
-				case 'Bookmark':
-					iconName = 'bookmark';
+				case 'Settings':
+					iconName = 'settings';
 					break;
 				default:
 					iconName = 'circle';
@@ -87,15 +87,14 @@ export default function App() {
 		inactiveTintColor: 'black',
 
 	}}>
-      <Tab.Screen name="Airplay" component={Airplay}/>
-      <Tab.Screen name="Send" component={Send}/>
-      <Tab.Screen name="Code" component={Code}/>
-      <Tab.Screen name="Users" component={Users}/>
-      <Tab.Screen name="Bookmark" component={Bookmark}/>
+      <Tab.Screen name="Home" component={HomeScreen}/>
+      <Tab.Screen name="Search" component={Search}/>
+      <Tab.Screen name="Chat" component={Chat}/>
+      <Tab.Screen name="Profile" component={Profile}/>
+      <Tab.Screen name="Settings" component={Settings}/>
     </Tab.Navigator>
     </NavigationContainer>
   );
-
 }
 
 
