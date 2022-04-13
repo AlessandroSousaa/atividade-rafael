@@ -1,10 +1,9 @@
 import { Text, View } from 'react-native'
 import  React from 'react'
-import styles from './style'; //exportando css style 
+import styles from './style'; 
 
 export default function Title() {
     
-  //aqui fica o titulo do app
 
     return (
       
