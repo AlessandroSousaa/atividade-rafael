@@ -1,8 +1,9 @@
+//rascunho =1
 import React, {useState} from 'react'
 import { Text, TextInput , View, TouchableOpacity } from 'react-native'
 
-import ResultMedia from '../Result_media/index'//importando compónente
-import styles from './style'; //importando o style
+import ResultMedia from '../Result_media/index'
+import styles from './style';
 
 export default function Form_media () {
 
@@ -15,13 +16,13 @@ export default function Form_media () {
     
     function mediaCalculator(){
 
-      // return setMedia ((Media/(Media1 + Media2 + Media3)).toFixed(3))  
+
 
       return setMedia ((Media(Media1 + Media2 + Media3)/3).toFixed(3))
 
     }
  
-    //veriifcar se as media estão vazias 
+
 
     function validationMedia() {
 
@@ -54,7 +55,7 @@ export default function Form_media () {
                  onChangeText={setMedia1}
                  value={Media1}
                  placeholder='Digite a primeira nota.'
-                 keyboardType='numeric'//determinado o tipo de teclado
+                 keyboardType='numeric'
                  
                  />
                  
@@ -65,7 +66,7 @@ export default function Form_media () {
                    onChangeText={setMedia2}
                    value={Media2}
                    placeholder='Digite a segunda nota.'
-                   keyboardType='numeric'//determinado o tipo de teclado
+                   keyboardType='numeric'
 
                  />
 
@@ -75,7 +76,7 @@ export default function Form_media () {
                    onChangeText={setMedia3}
                    value={Media3}
                    placeholder='Digite a terceira nota.'
-                   keyboardType='numeric'//determinado o tipo de teclado
+                   keyboardType='numeric'
 
                  />
                

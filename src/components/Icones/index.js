@@ -15,33 +15,33 @@ import styles from '../Icones/style';
   );
 }
 
-function Search() {
+function Send() {
     return(
         <View>
-          <Text>Search!</Text>
+          <Text>Send!</Text>
         </View>
       );
 }
 
-function Chat() {
+function Code() {
     return(
         <View>
         </View>
       );
 }
 
-function Profile() {
+function Users() {
     return(
         <View>
-          <Text>Profile!</Text>
+          <Text>Users!</Text>
         </View>
       );
 }
 
-function Settings() {
+function Bookmark() {
     return(
         <View>
-          <Text>Settings!</Text>
+          <Text>Bookmark!</Text>
         </View>
       );
 }
@@ -62,17 +62,17 @@ export default function App() {
 				case 'Airplay':
 					iconName = 'airplay';
 					break;
-				case 'Search':
-					iconName = 'search';
+				case 'Send':
+					iconName = 'send';
 					break;
-				case 'Chat':
-					iconName = 'message-square';
+				case 'Code':
+					iconName = 'code';
 					break;
-				case 'Profile':
-					iconName = 'user';
+				case 'Users':
+					iconName = 'users';
 					break;
-				case 'Settings':
-					iconName = 'settings';
+				case 'Bookmark':
+					iconName = 'bookmark';
 					break;
 				default:
 					iconName = 'circle';
@@ -88,13 +88,14 @@ export default function App() {
 
 	}}>
       <Tab.Screen name="Airplay" component={Airplay}/>
-      <Tab.Screen name="Search" component={Search}/>
-      <Tab.Screen name="Chat" component={Chat}/>
-      <Tab.Screen name="Profile" component={Profile}/>
-      <Tab.Screen name="Settings" component={Settings}/>
+      <Tab.Screen name="Send" component={Send}/>
+      <Tab.Screen name="Code" component={Code}/>
+      <Tab.Screen name="Users" component={Users}/>
+      <Tab.Screen name="Bookmark" component={Bookmark}/>
     </Tab.Navigator>
     </NavigationContainer>
   );
+
 }
 
 

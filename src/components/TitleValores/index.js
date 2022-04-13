@@ -10,7 +10,7 @@ export default function TitleValores() {
       
       <View style={styles.boxTitle}>
 
-        <Text style={styles.textTitle}>Calcular valor</Text>
+        <Text style={styles.textTitle}>Calcular Intervalo</Text>
 
       </View>
 

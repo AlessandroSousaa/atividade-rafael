@@ -1,17 +1,15 @@
 import { StyleSheet } from 'react-native'
 
 
-// css style 
-
 const styles = StyleSheet.create( {
 
    formContext:{
 
       width: "100%",
       bottom: 0,
-      alignItems: "center",//centralizando
-      borderTopLeftRadius: 30,//bordas arredondadas
-      borderTopRightRadius: 30,//bordas arredondadas 
+      alignItems: "center",
+      borderTopLeftRadius: 30,
+      borderTopRightRadius: 30,
       marginTop: 30,
     
    },
@@ -25,7 +23,7 @@ const styles = StyleSheet.create( {
 
    },
 
-   formLabel:{ //label de altura e peso
+   formLabel:{ 
 
       color: "#000000",
       fontSize: 18,
@@ -58,12 +56,22 @@ const styles = StyleSheet.create( {
       
    },
 
-   textbuttonCalculator:{ //nome dentro do botão
+   textbuttonCalculator:{
 
       fontSize: 20,
       color: "#ffffff",
 
    },
+   
+   numberResult:{
+      fontSize:20,
+      padding:10,
+      height:40,
+   },
+
+   information:{
+      fontSize:40
+   }
 
   });
 

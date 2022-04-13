@@ -31,7 +31,7 @@ export default function Form_media () {
                  style={styles.input}
                  onChangeText={setMedia1}
                  value={Media1}
-                 placeholder='Digite a primeira nota.'
+                 placeholder='Insira a primeira nota.'
                  keyboardType='numeric'//determinado o tipo de teclado
                  
                  />
@@ -42,7 +42,7 @@ export default function Form_media () {
                    style={styles.input}
                    onChangeText={setMedia2}
                    value={Media2}
-                   placeholder='Digite a segunda nota.'
+                   placeholder='Insira a segunda nota.'
                    keyboardType='numeric'//determinado o tipo de teclado
 
                  />
@@ -52,7 +52,7 @@ export default function Form_media () {
                    style={styles.input}
                    onChangeText={setMedia3}
                    value={Media3}
-                   placeholder='Digite a terceira nota.'
+                   placeholder='Insira a terceira nota.'
                    keyboardType='numeric'//determinado o tipo de teclado
 
                  />
@@ -60,7 +60,7 @@ export default function Form_media () {
             style={styles.buttonCalculator}
             activeOpacity={0.7}
             onPress={gerarResultado}>
-            <Text style={styles.textbuttonCalculator}>Calcular Média</Text>
+            <Text style={styles.textbuttonCalculator}>Calcular</Text>
            </TouchableOpacity>
  
             </View>
@@ -79,7 +79,7 @@ export default function Form_media () {
 			</View>
 
 			{por < 5 && por > 0 && (
-				<Text style={styles.information}>Reprovado</Text>
+				<Text style={styles.information}>Você foi reprovado</Text>
 			)}
 
 			{por >= 5 && por < 7 && (
@@ -87,9 +87,17 @@ export default function Form_media () {
 			)}
 
 			{por >= 7 && (
-				<Text style={styles.information}>Aprovado</Text>
+				<Text style={styles.information}>Você foi aprovado</Text>
 			)}
-
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
       </View>
 
     );

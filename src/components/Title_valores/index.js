@@ -11,9 +11,11 @@ export default function Title_Valores() {
       <View style={styles.boxTitle}>
 
         <Text style={styles.textTitle}>Calcular Intervalos</Text>
+        <br></br>
 
 
       </View>
+
 
     );
   }
