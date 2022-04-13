@@ -1,21 +1,21 @@
 import React, {useState} from 'react'
 import { Text, TextInput , View, TouchableOpacity } from 'react-native'
 
-import ResultMedia from '../Result_media/index'//importando compónente
+import ResultValores from '../Result_Valores/index'//importando compónente
 import styles from './style'; //importando o style
 
-export default function Form_media () {
+export default function Form_Valores () {
 
-  const [Media1, setMedia1] = useState('');
-  const [Media2, setMedia2] = useState('');
-  const [Media3, setMedia3] = useState('');
+  const [Valores1, setValores1] = useState('');
+  const [Valores2, setValores2] = useState('');
+  const [Valores3, setValores3] = useState('');
   const [total, setTotal] = useState(0);
 
   const x = parseFloat(total);
   const por = x ;
 
   function gerarResultado() {
-      setTotal(Number(Media1) + Number(Media2) + Number(Media3));
+      setTotal(Number(Valores1) + Number(Valores2) + Number(Valores3));
       Keyboard.dismiss();
   }
  
@@ -29,9 +29,9 @@ export default function Form_media () {
                  {/*campo de digitar*/}
                  <TextInput 
                  style={styles.input}
-                 onChangeText={setMedia1}
-                 value={Media1}
-                 placeholder='Digite a primeira nota.'
+                 onChangeText={setValores1}
+                 value={Valores1}
+                 placeholder='Insira o primeiro número.'
                  keyboardType='numeric'//determinado o tipo de teclado
                  
                  />
@@ -40,9 +40,9 @@ export default function Form_media () {
                  {/*campo de digitar*/}
                  <TextInput
                    style={styles.input}
-                   onChangeText={setMedia2}
-                   value={Media2}
-                   placeholder='Digite a segunda nota.'
+                   onChangeText={setValores2}
+                   value={Valores2}
+                   placeholder='Insira o segundo número.'
                    keyboardType='numeric'//determinado o tipo de teclado
 
                  />
@@ -50,9 +50,9 @@ export default function Form_media () {
                  {/*campo de digitar*/}
                  <TextInput
                    style={styles.input}
-                   onChangeText={setMedia3}
-                   value={Media3}
-                   placeholder='Digite a terceira nota.'
+                   onChangeText={setValores3}
+                   value={Valores3}
+                   placeholder='Insira o terceiro número.'
                    keyboardType='numeric'//determinado o tipo de teclado
 
                  />
