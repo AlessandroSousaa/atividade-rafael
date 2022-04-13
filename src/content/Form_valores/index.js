@@ -52,7 +52,7 @@ export default function Form_media () {
                    style={styles.input}
                    onChangeText={setMedia3}
                    value={Media3}
-                   placeholder='Digite a terceira nota.'
+                   placeholder='Insira o terceiro número.'
                    keyboardType='numeric'
 
                  />
@@ -75,6 +75,7 @@ export default function Form_media () {
 				  TOTAL:
 					{' '}
 					{total.toFixed(1)}
+          
 				</Text>
 
 			</View>
