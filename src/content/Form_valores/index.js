@@ -72,8 +72,7 @@ export default function Form_media () {
 
             <View style={styles.cardResult}>
 				<Text style={styles.numberResult}>
-				  TOTAL:
-					{' '}
+				  Total:{' '}
 					{total.toFixed(1)}
           
 				</Text>
