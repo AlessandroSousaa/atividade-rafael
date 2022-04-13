@@ -58,7 +58,7 @@ const styles = StyleSheet.create( {
       
    },
 
-   textbuttonCalculator:{ //nome dentro do botão
+   textbuttonCalculator:{
 
       fontSize: 20,
       color: "#ffffff",

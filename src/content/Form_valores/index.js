@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import { Text, TextInput , View, TouchableOpacity } from 'react-native'
 
-import Result_Valores from '../Result_Valores/index'//importando compónente
-import styles from './style'; //importando o style
+import Result_Valores from '../Result_Valores/index'
+import styles from './style';
 
 export default function Form_Valores () {
 
@@ -32,7 +32,7 @@ export default function Form_Valores () {
                  onChangeText={setValores1}
                  value={Valores1}
                  placeholder='Insira o primeiro número.'
-                 keyboardType='numeric'//determinado o tipo de teclado
+                 keyboardType='numeric'
                  
                  />
                  
@@ -43,7 +43,7 @@ export default function Form_Valores () {
                    onChangeText={setValores2}
                    value={Valores2}
                    placeholder='Insira o segundo número.'
-                   keyboardType='numeric'//determinado o tipo de teclado
+                   keyboardType='numeric'
 
                  />
 
@@ -53,7 +53,7 @@ export default function Form_Valores () {
                    onChangeText={setValores3}
                    value={Valores3}
                    placeholder='Insira o terceiro número.'
-                   keyboardType='numeric'//determinado o tipo de teclado
+                   keyboardType='numeric'
 
                  />
 

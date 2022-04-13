@@ -1,6 +1,6 @@
 import { Text, View } from 'react-native'
 import React, { Component } from 'react'
-import styles from './style'//importando o style
+import styles from './style'
 
 export default function Result_media (props) {
   
