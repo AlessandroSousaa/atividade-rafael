@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import { Text, TextInput , View, TouchableOpacity } from 'react-native'
 
-import ResultMedia from '../Result_media/index'//importando compónente
-import styles from './style'; //importando o style
+import ResultMedia from '../Result_media/index'
+import styles from './style';
 
 export default function Form_media () {
 
@@ -31,8 +31,8 @@ export default function Form_media () {
                  style={styles.input}
                  onChangeText={setMedia1}
                  value={Media1}
-                 placeholder='Digite a primeira nota.'
-                 keyboardType='numeric'//determinado o tipo de teclado
+                 placeholder='Insira o primeiro número.'
+                 keyboardType='numeric'
                  
                  />
                  
@@ -42,8 +42,8 @@ export default function Form_media () {
                    style={styles.input}
                    onChangeText={setMedia2}
                    value={Media2}
-                   placeholder='Digite a segunda nota.'
-                   keyboardType='numeric'//determinado o tipo de teclado
+                   placeholder='Insira o segundo número.'
+                   keyboardType='numeric'
 
                  />
 
@@ -53,14 +53,14 @@ export default function Form_media () {
                    onChangeText={setMedia3}
                    value={Media3}
                    placeholder='Digite a terceira nota.'
-                   keyboardType='numeric'//determinado o tipo de teclado
+                   keyboardType='numeric'
 
                  />
             <TouchableOpacity
             style={styles.buttonCalculator}
             activeOpacity={0.10}
             onPress={gerarResultado}>
-            <Text style={styles.textbuttonCalculator}>Calcular Intervalo</Text>
+            <Text style={styles.textbuttonCalculator}>RESULTADO</Text>
            </TouchableOpacity>
 
            <TouchableOpacity

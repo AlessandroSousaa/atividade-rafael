@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import { Text, TextInput , View, TouchableOpacity } from 'react-native'
 
-import ResultMedia from '../Result_media/index'//importando compónente
-import styles from './style'; //importando o style
+import ResultMedia from '../Result_media/index'
+import styles from './style';
 
 export default function Form_media () {
 
@@ -31,8 +31,8 @@ export default function Form_media () {
                  style={styles.input}
                  onChangeText={setMedia1}
                  value={Media1}
-                 placeholder='Digite a primeira nota.'
-                 keyboardType='numeric'//determinado o tipo de teclado
+                 placeholder='Insira a primeira nota.'
+                 keyboardType='numeric'
                  
                  />
                  
@@ -42,8 +42,8 @@ export default function Form_media () {
                    style={styles.input}
                    onChangeText={setMedia2}
                    value={Media2}
-                   placeholder='Digite a segunda nota.'
-                   keyboardType='numeric'//determinado o tipo de teclado
+                   placeholder='Insira a segunda nota.'
+                   keyboardType='numeric'
 
                  />
 
@@ -52,15 +52,15 @@ export default function Form_media () {
                    style={styles.input}
                    onChangeText={setMedia3}
                    value={Media3}
-                   placeholder='Digite a terceira nota.'
-                   keyboardType='numeric'//determinado o tipo de teclado
+                   placeholder='Insira a terceira nota.'
+                   keyboardType='numeric'
 
                  />
                   <TouchableOpacity
                       style={styles.buttonCalculator}
                         activeOpacity={0.7}
                           onPress={gerarResultado}>
-                    <Text style={styles.textbuttonCalculator}>Calcular Média</Text>
+                    <Text style={styles.textbuttonCalculator}>RESULTADO</Text>
                   </TouchableOpacity>
  
       </View>
@@ -79,7 +79,7 @@ export default function Form_media () {
 			      </View>
 
 			          {por < 5 && por > 0 && (
-				          <Text style={styles.information}>REPROVADO :(</Text>
+				          <Text style={styles.information}>VOCÊ FOI REPROVADO</Text>
 )}
 
 			          {por >= 5 && por < 7 && (
@@ -87,7 +87,7 @@ export default function Form_media () {
 )}
 
 			          {por >= 7 && (
-				          <Text style={styles.information}>APROVADO!</Text>
+				          <Text style={styles.information}>VOCÊ FOI APROVADO!</Text>
 )}
 
             </View>

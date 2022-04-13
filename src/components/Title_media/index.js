@@ -10,7 +10,7 @@ export default function Title_Media() {
       
       <View style={styles.boxTitle}>
 
-        <Text style={styles.textTitle}>Calcular Média</Text>
+        <Text style={styles.textTitle}>Calculando Média</Text>
 
       </View>
 
