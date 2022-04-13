@@ -6,10 +6,10 @@ export default function Result_valores (props) {
   
     return (
 
-      <View style={styles.resultImc}>
+      <View style={styles.resultValores}>
 
-        <Text style={styles.information}>{props.messageResultImc}</Text>
-        <Text style={styles.numberImc}>{props.ResultImc}</Text>
+        <Text style={styles.information}>{props.messageResultValores}</Text>
+        <Text style={styles.numberValores}>{props.ResultValores}</Text>
        
       </View>
 

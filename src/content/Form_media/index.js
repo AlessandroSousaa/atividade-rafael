@@ -6,41 +6,19 @@ import styles from './style'; //importando o style
 
 export default function Form_media () {
 
-    const [Media1, setMedia1]= useState(null)
-    const [Media2, setMedia2]= useState(null)
-    const [Media3, setMedia3]= useState(null)
-    const [messageMedia, setMessageMedia]= useState("Preencha as notas acima.");
-    const [Media, setMedia]= useState(null)
-    const [TextButton, setTextButton]= useState("Calcular");
-    
-    function mediaCalculator(){
+  const [Media1, setMedia1] = useState('');
+  const [Media2, setMedia2] = useState('');
+  const [Media3, setMedia3] = useState('');
+  const [total, setTotal] = useState(0);
 
-      // return setMedia ((Media/(Media1 + Media2 + Media3)).toFixed(3))  
+  const x = parseFloat(total);
+  const por = x / 3;
 
-      return setMedia ((Media(Media1 + Media2 + Media3)/3).toFixed(3))
-
-    }
+  function gerarResultado() {
+      setTotal(Number(Media1) + Number(Media2) + Number(Media3));
+      Keyboard.dismiss();
+  }
  
-    //veriifcar se as media estão vazias 
-
-    function validationMedia() {
-
-      if(Media1 != null  && Media2 !=null && Media3 !=null){
-
-        mediaCalculator()
-        setMedia1(null)
-        setMedia2(null)
-        setMedia3(null)
-        setMessageMedia("Sua media é igual:")
-        setTextButton("Calcular Novamente")
-        return
-
-        }
-
-        setMedia(null)
-        setTextButton("Calcular")
-        setMessageMedia("preencha os campos")
-    }
 
     return (
 
@@ -78,24 +56,39 @@ export default function Form_media () {
                    keyboardType='numeric'//determinado o tipo de teclado
 
                  />
-               
-                 {/*botãos com efeito*/}
-                 <TouchableOpacity 
-                    style={styles.buttonCalculator}
-                    onPress={() =>{
-                      validationMedia()
-                    }}
-                 >
+            <TouchableOpacity
+            style={styles.buttonCalculator}
+            activeOpacity={0.7}
+            onPress={gerarResultado}>
+            <Text style={styles.textbuttonCalculator}>Calcular Média</Text>
+           </TouchableOpacity>
+ 
+            </View>
 
-                 {/*texto dentro do botão*/}  
-                 <Text style={styles.textbuttonCalculator}>{TextButton}</Text>
-                 
-                 </TouchableOpacity>
-                 
-            </View> 
+            <View style={styles.cardResult}>
+				<Text style={styles.numberResult}>
+					Total:
+					{' '}
+					{total.toFixed(1)}
+				</Text>
+				<Text style={styles.numberResult}>
+					Média:
+					{' '}
+					{por.toFixed(1)}
+				</Text>
+			</View>
 
-           {/*resultado do imc*/}
-           <ResultMedia messageResultMedia={messageMedia} ResultMedia={Media}/> 
+			{por < 5 && por > 0 && (
+				<Text style={styles.information}>Reprovado</Text>
+			)}
+
+			{por >= 5 && por < 7 && (
+				<Text style={styles.information}>Recuperação</Text>
+			)}
+
+			{por >= 7 && (
+				<Text style={styles.information}>Aprovado</Text>
+			)}
 
       </View>
 

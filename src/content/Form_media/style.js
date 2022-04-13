@@ -65,6 +65,16 @@ const styles = StyleSheet.create( {
 
    },
 
+   numberResult:{
+      fontSize:20,
+      padding:10,
+      height:40,
+   },
+
+   information:{
+      fontSize:40
+   }
+
   });
 
   export default styles
